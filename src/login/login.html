@@ -1,0 +1,13 @@
+<template>
+  <form submit.delegate="login()">
+    <label>Email:</label>
+    <input type="text" value.bind="email" />
+
+    <label>Password:</label>
+    <input type="password" value.bind="password" />
+
+    <button click.delegate="login()">Login</button>
+    <a click.delegate="goToSignup()">Don't have an account? Sign up here.</a>
+
+  </form>
+</template>

@@ -1,0 +1,14 @@
+<template>
+  <form submit.delegate="signup()">
+    <label>Email:</label>
+    <input type="text" value.bind="email" />
+
+    <label>Password:</label>
+    <input type="password" value.bind="password" />
+
+    <label>Confirm Password:</label>
+    <input type="password" value.bind="confirmPassword" />
+
+    <button type="submit">Signup</button>
+  </form>
+</template>

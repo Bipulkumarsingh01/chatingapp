@@ -1,0 +1,16 @@
+<!-- src/components/home/home.html -->
+
+<template>
+  <h2>Welcome to the Home Page!</h2>
+
+  <!-- Chat Card -->
+  <div class="chat-card">
+    <div class="chat-messages" ref="chatMessages">
+      <!-- Messages will be dynamically added here -->
+    </div>
+    <div class="chat-input">
+      <textarea value.bind="newMessage" rows="3" placeholder="Type your message..."></textarea>
+      <button click.delegate="sendMessage()">Send</button>
+    </div>
+  </div>
+</template>
